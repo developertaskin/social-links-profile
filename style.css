@@ -1,0 +1,122 @@
+:root {
+  --greenColor: hsl(75, 94%, 57%);
+
+  --whiteColor: hsl(0, 0%, 100%);
+
+  --grey700: hsl(0, 0%, 85%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* Common CSS */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--grey900);
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+a {
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+/* Main Area Style */
+.container {
+  width: 400px;
+  height: 700px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: var(--grey800);
+  text-align: center;
+  padding: 20px;
+}
+
+.card_img {
+  width: 100%;
+  height: 48%;
+}
+
+.card_img img {
+  width: 130px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.card_img h1 {
+  font-size: 36px;
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+
+.card_img h4 {
+  font-size: 18px;
+  color: var(--greenColor);
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.card_img p {
+  font-size: 18px;
+  color: var(--grey700);
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.card_social {
+  height: auto;
+  width: 100%;
+}
+
+
+.card_social a.social {
+  display: block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  padding: 17px;
+  border-radius: 8px;
+  color: var(--whiteColor);
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.card_social a.social:hover {
+  background: var(--greenColor);
+  text-decoration: none;
+  padding: 17px;
+  border-radius: 8px;
+  color: var(--grey900);
+}
